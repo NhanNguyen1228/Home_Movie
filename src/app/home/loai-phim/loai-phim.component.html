@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-12 text-center ">
+    <button class="btn loaiPhim_click mr-3" [ngClass]="{choose: dangChieuStatus}"  (click)="hienPhimDangChieu()">ĐANG CHIẾU</button>
+    <button class="btn loaiPhim_click" [ngClass]="{choose: !dangChieuStatus}" (click)="hienPhimSapChieu()">SẮP CHIẾU</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12" *ngIf="dangChieuStatus; else phimSapChieu">
+    <app-phim-dang-chieu></app-phim-dang-chieu>
+  </div>
+  <ng-template #phimSapChieu>
+    <div class="col-md-12">
+      <app-phim-sap-chieu></app-phim-sap-chieu>
+    </div>
+  </ng-template>
+</div>

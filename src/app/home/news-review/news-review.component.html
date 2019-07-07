@@ -1,0 +1,23 @@
+<div class="news-review">
+    <div class="container news-review-content">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <button class="btn news-review_click mr-3"  (click)="chonNewsReview('news')">TIN TỨC</button>
+            <button class="btn news-review_click"  (click)="chonNewsReview('review')">REVIEW</button>
+          </div>
+        </div>
+        <div class="row" [ngSwitch]="newsReview">
+          <div *ngSwitchCase="'news'" class="col-md-12">
+            <app-news></app-news>
+          </div>
+          <div *ngSwitchCase="'review'" class="col-md-12">
+            <app-review></app-review>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+              <button class="btn xemthem">Xem thêm</button>
+          </div>
+        </div>
+      </div>
+</div>

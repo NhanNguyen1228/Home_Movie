@@ -1,0 +1,33 @@
+
+.footerbottom{
+    border-top: 1px solid;
+    padding: 20px 0;
+
+    .footerbottom_logo{
+        margin-top: 10px;
+        img{
+            width: 45px;
+        }
+    }
+
+    .footerbottom-content{
+        margin-left: 20px;      
+        p{
+            margin: 0;
+            color: #afaeae;
+            font-size: 12px;
+            line-height: 22px;
+
+            &:first-child{
+                color: white;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.logoCongThuong{
+    img{
+        width: 145px;
+    }
+}

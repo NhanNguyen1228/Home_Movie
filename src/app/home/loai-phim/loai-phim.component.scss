@@ -1,0 +1,18 @@
+.loaiPhim_click {
+    font-size: 28px;
+    letter-spacing: 1px;
+    margin: 30px 0 35px 0;
+    color: #00c3b7; 
+    transition:  0.3s;
+    font-weight: 500;
+    
+    &:hover{
+        font-size: 30px;
+        color: white;
+    }
+}
+
+.choose{
+    font-size: 30px;
+    color: white;
+}
